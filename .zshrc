@@ -5,6 +5,12 @@ eval "$(rbenv init -)"
 
 export TERM=xterm-256color 
 
+setopt auto_cd
+setopt auto_pushd
+setopt prompt_subst
+setopt histignoredups
+autoload -Uz compinit && compinit
+
 export LSCOLORS='dxfxcxdxbxegedabagacad'
 
 source $ZSH/oh-my-zsh.sh
@@ -20,3 +26,5 @@ export PATH=/Users/ssapra/.rbenv/shims:~/bin:/Applications/Postgres.app/Contents
 source ~/aliases.zsh
 
 export PGHOST=localhost
+
+plugins=(git ruby rails rake osx)

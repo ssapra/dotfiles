@@ -10,6 +10,7 @@ alias ssh='ssh -X'
 alias killrails="kill -9 $(lsof -wni tcp:3000)"
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias rdb="dropdb uc_events_development; PGUSER=postgres heroku pg:pull DATABASE uc_events_development -a ucevents"
+alias ucrs='foreman start -f Procfile.dev'
 
 alias be="bundle exec"
 alias rake="bundle exec rake"
