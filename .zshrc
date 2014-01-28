@@ -21,7 +21,7 @@ function chpwd()
   ls -aG
 }
 
-export PATH=/Users/ssapra/.rbenv/shims:~/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH
+export PATH=/Users/ssapra/.rbenv/shims:~/bin:/Applications/Postgres.app/Contents/MacOS/bin:~/.local/bin:$PATH
 
 source ~/aliases.zsh
 

@@ -8,9 +8,13 @@ alias rc="rails c"
 alias r="rake db:test:prepare && bundle exec rspec"
 alias ssh='ssh -X'
 alias killrails="kill -9 $(lsof -wni tcp:3000)"
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias rdb="dropdb uc_events_development; PGUSER=postgres heroku pg:pull DATABASE uc_events_development -a ucevents"
 alias ucrs='foreman start -f Procfile.dev'
+
+alias wow='git status'
+alias very='git'
+alias such='git'
 
 alias be="bundle exec"
 alias rake="bundle exec rake"
@@ -21,7 +25,8 @@ alias hh="cd ~/Shaan/dev/happyhealth"
 alias lm="cd ~/Shaan/dev/linguamocha"
 alias ss="cd ~/Shaan/dev/shaansapra"
 alias sam="cd ~/Shaan/dev/ProjectSam"
-alias class="cd ~/Shaan/uchicago/classes/Winter\ 2014/"
+alias chirc="cd ~/Shaan/uchicago/classes/Winter\ 2014/CMSC\ 233/git_repo/chirc"
+alias lang="cd ~/Shaan/uchicago/classes/Winter\ 2014/CMSC\ 25020/ssapra-compling-win-14"
 
 alias ifi='ifconfig | ack "net"'
 alias untar="tar -xvvf"

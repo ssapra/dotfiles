@@ -5,8 +5,6 @@ set nocompatible
 execute pathogen#infect()
 call pathogen#helptags()
 
-au FileType javascript call JavaScriptFold()
-
 " ================ General Config ====================
 
 set number                      "Line numbers are good
@@ -96,3 +94,14 @@ set sidescroll=1
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 noremap <silent> nn :NERDTreeToggle<cr>
+
+" Uncomment the following to have Vim jump to the last position when                                                       
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
+
+nnoremap <F5> :set invpaste paste?<Enter>
+imap <F5> <C-O><F5>
+set pastetoggle=<F5>
