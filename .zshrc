@@ -21,10 +21,13 @@ function chpwd()
   ls -aG
 }
 
-export PATH=/Users/ssapra/.rbenv/shims:~/bin:/Applications/Postgres.app/Contents/MacOS/bin:~/.local/bin:$PATH
+export EDITOR='vim'
+export PGHOST=localhost
+plugins=(git ruby rails rake osx)
+
+#alias python=python3
+
+export PATH=/usr/local/bin:/Users/ssapra/.rbenv/shims:~/bin:/Applications/Postgres.app/Contents/MacOS/bin:~/.local/bin:$PATH
 
 source ~/aliases.zsh
-
-export PGHOST=localhost
-
-plugins=(git ruby rails rake osx)
+source ~/.bin/tmuxinator.zsh
